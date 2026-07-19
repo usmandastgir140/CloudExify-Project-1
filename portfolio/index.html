@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M.Usman Dastgir | Full Stack Developer Portfolio</title>
+  <meta name="description" content="Portfolio of M.Usman Dastgir, a Computer Science student and full-stack developer building web and mobile applications.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header>
+    <nav class="navbar">
+      <div class="container navbar-inner">
+        <span class="logo">usman<span class="cursor-blink">_</span></span>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about"><span class="line-no">01</span>about</a></li>
+          <li><a href="#skills"><span class="line-no">02</span>skills</a></li>
+          <li><a href="#projects"><span class="line-no">03</span>projects</a></li>
+          <li><a href="#contact"><span class="line-no">04</span>contact</a></li>
+          <li class="nav-theme">
+            <button class="theme-dot" data-accent="green" aria-label="Green accent theme"></button>
+            <button class="theme-dot" data-accent="amber" aria-label="Amber accent theme"></button>
+            <button class="theme-dot" data-accent="blue" aria-label="Blue accent theme"></button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section id="hero">
+      <div class="container">
+        <div class="terminal-window">
+          <div class="terminal-bar">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="terminal-title">usmandastgir@portfolio: ~</span>
+          </div>
+          <div class="terminal-body">
+            <p class="boot-line">$ whoami</p>
+            <h1>M.Usman Dastgir<span class="cursor-blink">_</span></h1>
+            <p class="boot-line">$ cat role.txt</p>
+            <p class="role-line">I'm <span id="typedText" class="typed-accent"></span><span class="type-cursor">|</span></p>
+            <p class="boot-line">$ ./intro.sh</p>
+            <p class="intro-text">"I am currently pursuing my Bachelor’s degree in Computer Science (BSCS) at Comsats University Islamabad, where I am honing my skills in various fields of technology. As a frontend developer, I have successfully created and designed multiple websites, bringing my creativity and technical expertise to life through seamless user experiences. Through persistent effort and dedication, I earned the prestigious CS50 certificate from Cambridge, Massachusetts University, which has greatly expanded my understanding of computer science and programming. Motivated by a deep passion for coding, I am now focusing on transitioning into a proficient Java Developer, as I continue to grow and learn within the vast tech industry. Every new project I take on is an opportunity for me to refine my skills and achieve even greater goals. My ambition drives me to push the boundaries of what I can accomplish, and I strive to continuously challenge myself to reach new heights, both in my academic journey and my professional development."</p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">view_projects()</a>
+              <a href="assets/resume.pdf" class="btn btn-ghost" download>download resume ↓</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about">
+      <div class="container">
+        <p class="section-label"><span class="line-no">01</span> about</p>
+        <h2 class="section-title">// who's writing this code</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>I'm a Computer Science student at <strong>COMSATS University Islamabad</strong> (Class of 2028),
+              currently early in my degree but already deep into building real, end-to-end applications rather
+              than waiting for coursework to catch up.</p>
+            <p>I completed <strong>CS50x</strong> on my own, and since then I've been stacking hands-on projects
+              across full-stack web development and mobile app development — mostly with Laravel, PHP, MySQL,
+              Flutter and Firebase. I like taking a working system and rebuilding it properly: better structure,
+              real-time sync, and code that could actually survive being handed to someone else.</p>
+            <p>I'm currently building my project portfolio and looking for my first internship or collaborative
+              opportunity to apply what I've built so far.</p>
+          </div>
+          <div class="about-facts">
+            <div class="fact-card">
+              <span class="fact-label">$ cat education.json</span>
+              <p><span class="key">university</span>: "COMSATS University Islamabad"</p>
+              <p><span class="key">degree</span>: "BS Computer Science"</p>
+              <p><span class="key">class_of</span>: 2028</p>
+              <p><span class="key">certifications</span>: ["CS50x"]</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills">
+      <div class="container">
+        <p class="section-label"><span class="line-no">02</span> skills</p>
+        <h2 class="section-title">// stack --list</h2>
+        <div class="skills-grid">
+          <div class="skill" data-percent="80">
+            <p>Flutter &amp; Dart</p>
+            <div class="bar"><div class="fill"></div></div>
+          </div>
+          <div class="skill" data-percent="85">
+            <p>PHP / Laravel</p>
+            <div class="bar"><div class="fill"></div></div>
+          </div>
+          <div class="skill" data-percent="80">
+            <p>MySQL</p>
+            <div class="bar"><div class="fill"></div></div>
+          </div>
+          <div class="skill" data-percent="75">
+            <p>Firebase</p>
+            <div class="bar"><div class="fill"></div></div>
+          </div>
+          <div class="skill" data-percent="70">
+            <p>HTML / CSS / JavaScript</p>
+            <div class="bar"><div class="fill"></div></div>
+          </div>
+          <div class="skill" data-percent="65">
+            <p>Java</p>
+            <div class="bar"><div class="fill"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects">
+      <div class="container">
+        <p class="section-label"><span class="line-no">03</span> projects</p>
+        <h2 class="section-title">// ls -la projects/</h2>
+
+        <div class="filter-bar">
+          <button data-filter="all" class="filter-btn active">all</button>
+          <button data-filter="laravel" class="filter-btn">laravel</button>
+          <button data-filter="flutter" class="filter-btn">flutter</button>
+          <button data-filter="mysql" class="filter-btn">mysql</button>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card" data-tags="laravel,mysql">
+            <div class="project-head">
+              <span class="folder-icon">📁</span>
+              <h3>Vehicle Service Record &amp; Maintenance Management System</h3>
+            </div>
+            <p class="project-desc">A full-stack system built with Laravel 10, MySQL and Bootstrap 5, covering
+              8 modules: vehicles, services, reminders, fuel logs, expenses, insurance, documents and reports.
+              Includes PDF report generation via DomPDF, Chart.js dashboards and policy-based authorization.</p>
+            <ul class="tag-list">
+              <li>Laravel 10</li><li>MySQL</li><li>Bootstrap 5</li><li>DomPDF</li><li>Chart.js</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="proj-link">github ↗</a>
+              <a href="#" class="proj-link">live demo ↗</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="flutter,mysql">
+            <div class="project-head">
+              <span class="folder-icon">📁</span>
+              <h3>Smart Vehicle Service &amp; Token Management — Flutter App</h3>
+            </div>
+            <p class="project-desc">A Flutter conversion of an existing PHP-based token management system, with a
+              dedicated API service layer, Provider-based state management, secure token storage and typed data
+              models — synced in real time to a shared MySQL backend across web and mobile.</p>
+            <ul class="tag-list">
+              <li>Flutter</li><li>Dart</li><li>Provider</li><li>PHP API</li><li>MySQL</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="proj-link">github ↗</a>
+              <a href="#" class="proj-link">live demo ↗</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="flutter">
+            <div class="project-head">
+              <span class="folder-icon">📁</span>
+              <h3>Add Your Next Project</h3>
+            </div>
+            <p class="project-desc">Reserved slot — swap this card for your next build. Keep the same markup
+              structure and just update the title, description, tags and links.</p>
+            <ul class="tag-list">
+              <li>your-stack-here</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="proj-link">github ↗</a>
+              <a href="#" class="proj-link">live demo ↗</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact">
+      <div class="container">
+        <p class="section-label"><span class="line-no">04</span> contact</p>
+        <h2 class="section-title">// send_message()</h2>
+
+        <div class="contact-grid">
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <label for="name">name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name">
+            </div>
+            <div class="form-row">
+              <label for="email">email</label>
+              <input type="email" id="email" name="email" placeholder="writeyouremail@email.com">
+            </div>
+            <div class="form-row">
+              <label for="message">message</label>
+              <textarea id="message" name="message" rows="5" placeholder="let's build something..."></textarea>
+            </div>
+            <p id="formStatus" class="form-status" role="status"></p>
+            <button type="submit" class="btn btn-primary">submit()</button>
+          </form>
+
+          <div class="contact-links">
+            <p class="fact-label">$ cat social.json</p>
+            <ul>
+              <li><a href="mailto:usman@example.com">✉ email</a></li>
+              <li><a href="https://github.com/" target="_blank" rel="noopener">⌥ github</a></li>
+              <li><a href="https://linkedin.com/" target="_blank" rel="noopener">in linkedin</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>© 2026 Usman. Built with HTML, CSS &amp; vanilla JS. No frameworks harmed.</p>
+    </div>
+  </footer>
+
+  <div class="easter-egg" id="easterEgg">🎉 achievement unlocked: konami coder</div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
